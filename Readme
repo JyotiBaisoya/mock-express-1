@@ -1,0 +1,36 @@
+
+ # The API end points are as:-
+  ---> /api/register
+     ->Method:POST
+     ->Body should contain : name,email,password;
+     ->If req is ok you will get response as registered successfully with status code 201
+  ---> /api/login
+     ->Method:POST
+     ->Body should contain : email,password;
+     ->If req is ok you will get response as loggedin successfully with status code
+  ---> /api/flights
+     ->Method:GET
+     -> you will get details of all flights with status code 200
+  ---> /api/flights/:id
+     ->Method:GET
+     -> you will get details of respective flight whose id is given in param with status code 200
+  ---> /api/flights
+     ->Method:POST
+     ->Body should contain : airline,flightNo,departure,arrival,departureTime,arrivalTime,price,seats;
+     ->If req is ok you will get response as flight has been successfully added with status code 201
+  ---> /api/flights/:id
+     ->Method:PATCH
+     ->Body should contain : whatever you want to update;
+     ->If req is ok you will get response as flight has been successfully updated with status code 204
+  ---> /api/flights/:id
+     ->Method:DELETE
+     ->If req is ok you will get response as flight has been successfully deleted with status code 202
+  ---> /api/booking
+     ->Method:POST
+     ->Body should contain : user:UserID,flight:flightID
+     ->If req is ok you will get response as you have successfully booked the flight with status code 201
+  ---> /api/datshboard
+     ->Method:GET
+     -> you will get response as  list all the bookings so far with the user and flight details with status code 200
+      
+     
